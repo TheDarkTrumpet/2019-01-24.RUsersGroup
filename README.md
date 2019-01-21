@@ -39,6 +39,13 @@ docker pull microsoft/dotnet
 docker pull thedarktrumpet/rstudiojava
 ```
 
-Please also note that I recommend pulling down the files in this repository, although that's not strictly necessary.  You can install git from https://git-scm.com/downloads
+Please also note that I recommend pulling down the files in this repository, although that's not strictly necessary.  You can install git from https://git-scm.com/downloads  I strongly recommend if you're writing any code (regardless of the language, including scripting languages) that you get used to using Git.
+
+After installing git, you can clone this repository by opening a terminal (PowerShell, Terminal.app, etc) and copying/pasting the following:
+
+```shell
+git clone https://github.com/TheDarkTrumpet/2019-01-24.RUsersGroup.git
+cd 2019-01-24.RUsersGroup
+```
 
 **Please Note:** If you have any problems setting this up, please feel free to arrive 30 minutes early to the meeting (in person) at the top floor of Public Health.  I can assist you on getting things setup.
