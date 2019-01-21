@@ -1,12 +1,12 @@
 \documentclass{beamer}
 \usepackage[utf8]{inputenc}
-
+\setbeamertemplate{items}[ball] 
 \title{R Users Group}
 \subtitle{Intro to Docker - Why and How to Use It}
 \author{David Thole}
 \institute{University of Iowa, College of Pharmacy}
 \date{2019/01/24}
-
+\logo{\includegraphics[width=50px]{images/docker.png}}
 \AtBeginSection[]
 {
   \begin{frame}
@@ -25,23 +25,45 @@
 
 \section{1. What is it, how to start using it?}
 \begin{frame}
-    \frametitle{Why use Docker?}
+    \frametitle{Purpose of Docker}
+    Came about from the concept of "Depenency Hell", and "It works on my machine" which is the tightly coupled dependencies that are difficult to reproduce
+    on other machines.
 \end{frame}
 
 \begin{frame}
     \frametitle{Why use Docker? (System Admin Perspective)}
+    \begin{enumerate}
+        \item Ability to run PowerShell/Bash on any OS.
+        \item Ability to publish workflows that include the dependencies for that specific process, or set of processes.
+        \item Ability to reproduce an environment in a deterministic manner (oops, forgot to install X)
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Why use Docker? (Developer Perspective)}
+    \begin{enumerate}
+        \item Ability to bundle dependencies for a project into one bundle (No more needing version .NET 4.5 runtime installed on system X)
+        \item Ability to have containers more accurate between test and production (same container can be used with different entrypoints)
+        \item Ability to abstract dependencies of a development machine (No more install X, then Y, then Z - for each developer, spending a day setting up a new machine)
+        \item Ability to test new software/products quickly
+        \item Ability to script out deployment/testing much easier than current solutions
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Why use Docker? (DBA/Analyst Perspective)}
+    \begin{enumerate}
+        \item Ability to test data sets easier (script the loading from a backup)
+        \item Ability to create working sets (e.g. working on project X's data, now project Y)
+    \end{enumerate}
 \end{frame}
 
 \begin{frame}
     \frametitle{Why use Docker? (Researcher Perspective)}
+    \begin{enumerate}
+        \item Ability to reproduce results using an exact setup (vs it ran on machine X 3 years ago, and has since been reformatted)
+        \item Ability to script an experiment's processing, to enforce standardization, but to aid in reproducability
+    \end{enumerate}
 \end{frame}
 
 \section{2. How it works}
