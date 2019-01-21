@@ -3,3 +3,4 @@ temp/*
 dotnet/bin/
 .vscode
 dotnet/obj
+.rstudio

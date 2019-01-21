@@ -6,4 +6,3 @@ mkdir temp
 docker pull ubuntu
 docker pull microsoft/dotnet
 docker pull thedarktrumpet/rstudiojava
-docker pull microsoft/mssql-server-linux
