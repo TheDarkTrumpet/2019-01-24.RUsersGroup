@@ -4,3 +4,12 @@ dotnet/bin/
 .vscode
 dotnet/obj
 .rstudio
+documents/presentation/*.aux
+documents/presentation/*.fls
+documents/presentation/*.nav
+documents/presentation/*.gz
+documents/presentation/*.toc
+documents/presentation/*.fdb_latexmk
+documents/presentation/*.log
+documents/presentation/*.out
+documents/presentation/*.snm

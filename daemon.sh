@@ -12,3 +12,5 @@ docker kill rstudio
 
 # Start RStudio (Multiple Maps)
 docker run --rm -d -p 8787:8787 -e PASSWORD=none -v$PWD/src:/home/rstudio/src -v$PWD/.rstudio:/home/rstudio/.rstudio --name rstudio thedarktrumpet/rstudiojava
+
+docker exec -it rstudio /bin/bash
