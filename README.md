@@ -16,7 +16,7 @@ Agenda:
         1.  Pulling, Running Containers (interactive, daemon modes), Building, and Multiple Containers
 3. Open Discussion/Problem Solving
 4. Closings
-5. 
+
 Setup Notes:
 ------------
 
@@ -30,3 +30,15 @@ https://docs.docker.com/docker-for-mac/install/
 
 **Linux**
 https://docs.docker.com/install/linux/docker-ce/ubuntu/
+
+After the base install of Docker is completed, please make sure to run the following commands:
+
+```bash
+docker pull ubuntu
+docker pull microsoft/dotnet
+docker pull thedarktrumpet/rstudiojava
+```
+
+Please also note that I recommend pulling down the files in this repository, although that's not strictly necessary.  You can install git from https://git-scm.com/downloads
+
+**Please Note:** If you have any problems setting this up, please feel free to arrive 30 minutes early to the meeting (in person) at the top floor of Public Health.  I can assist you on getting things setup.
