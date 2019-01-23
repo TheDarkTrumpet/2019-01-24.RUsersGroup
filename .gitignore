@@ -13,3 +13,4 @@ documents/presentation/*.fdb_latexmk
 documents/presentation/*.log
 documents/presentation/*.out
 documents/presentation/*.snm
+documents/presentation/images/Original/*
