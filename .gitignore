@@ -13,4 +13,5 @@ documents/presentation/*.fdb_latexmk
 documents/presentation/*.log
 documents/presentation/*.out
 documents/presentation/*.snm
-documents/presentation/images/Original/*
+documents/presentation/images/Original/
+*.DS_Store
