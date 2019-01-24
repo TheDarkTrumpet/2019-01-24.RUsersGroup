@@ -5,7 +5,7 @@ services:
     volumes:
       - .:/home/rstudio
     ports:
-     - "8787:8787"
+     - "8788:8787"
     links:
       - sqlserver
     container_name: rstudio_container
@@ -13,6 +13,8 @@ services:
     ports:
      - "1433:1433"
     image: "microsoft/mssql-server-linux"
+    volumes:
+      - .:/data
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: pAssw04d

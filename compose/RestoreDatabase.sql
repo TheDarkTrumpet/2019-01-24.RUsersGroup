@@ -1,4 +1,4 @@
-RESTORE DATABASE WorldWideImporters FROM DISK='e:\data\WideWorldImporters-Full.bak'
+RESTORE DATABASE WorldWideImporters FROM DISK='e:\data\compose\WideWorldImporters-Full.bak'
 WITH
    MOVE 'WWI_Primary' TO 'C:\var\opt\mssql\data\WorldWideImporters.mdf',
    MOVE 'WWI_Log' TO 'C:\var\opt\mssql\data\WorldWideImporters_log.ldf',
