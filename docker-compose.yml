@@ -1,0 +1,19 @@
+version: '3'
+services:
+  rstudio:
+    image: "thedarktrumpet/rstudio:v2"
+    volumes:
+      - .:/home/rstudio
+    ports:
+     - "8787:8787"
+    links:
+      - sqlserver
+    container_name: rstudio_container
+  sqlserver:
+    ports:
+     - "1433:1433"
+    image: "microsoft/mssql-server-linux"
+    environment:
+      ACCEPT_EULA: Y
+      SA_PASSWORD: pAssw04d
+    container_name: mssql_container
