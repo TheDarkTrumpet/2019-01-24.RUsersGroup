@@ -7,9 +7,9 @@ services:
     ports:
      - "8788:8787"
     links:
-      - sqlserver
-    container_name: rstudio_container
-  sqlserver:
+      - mssql
+    container_name: rstudio_compose
+  mssql:
     ports:
      - "1433:1433"
     image: "microsoft/mssql-server-linux"
@@ -18,4 +18,4 @@ services:
     environment:
       ACCEPT_EULA: Y
       SA_PASSWORD: pAssw04d
-    container_name: mssql_container
+    container_name: mssql_compose

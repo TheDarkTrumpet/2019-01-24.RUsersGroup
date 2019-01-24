@@ -15,3 +15,5 @@ documents/presentation/*.out
 documents/presentation/*.snm
 documents/presentation/images/Original/
 *.DS_Store
+.odbc.ini
+
